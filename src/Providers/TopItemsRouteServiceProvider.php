@@ -17,5 +17,6 @@ class TopItemsRouteServiceProvider extends RouteServiceProvider
     public function map(Router $router)
     {
         $router->get('hello-world','TopItems\Controllers\TopItemsController@getHelloWorldPage');
+        $router->get('topitems', 'TopItems\Controllers\TopItemsController@showTopItems');
     }
 }
